@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaStore</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- MAIN CONTENT -->
+    <div id="mainContent">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <div class="logo">NovaStore</div>
+        <nav>
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#shop" class="nav-link">Shop</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <button class="nav-btn" id="signupBtn">Sign Up</button>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div>
+          <h1>Build Your Digital Lifestyle</h1>
+          <p>Premium curated products for modern creators.</p>
+          <a href="#shop" class="btn">Explore Products</a>
+        </div>
+      </section>
+
+      <!-- SHOP -->
+      <section class="section" id="shop">
+        <h2>Featured Products</h2>
+        <div class="grid">
+          <div class="card">
+            <img
+              src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczczLXBhaS0xNjMtbW9ja3VwLmpwZw.jpg"
+              alt="Headphones"
+            />
+            <h3>Wireless Headphones</h3>
+            <p class="price">$129</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.promobilliger.de/thumbnail/d7/bb/8b/1758130267/mo2748-03_1920x1920.jpg?ts=1759767349"
+              alt="Smart Watch"
+            />
+            <h3>Smart Watch</h3>
+            <p class="price">$199</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.bearabeara.co.uk/_next/image?url=https%3A%2F%2Fcdn.swell.store%2Fbeara-beara%2F6981df07862da400127dd88c%2Fb88e9dc6e17cccbdd5452cda43406f71%2FWill%2520BP%2520S4.jpg&w=3840&q=75"
+              alt="Backpack"
+            />
+            <h3>Backpack</h3>
+            <p class="price">$89</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="section content" id="about">
+        <h2>About Us</h2>
+        <p>
+          NovaStore is a modern digital commerce brand focused on premium
+          curated products.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section content" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <footer>© 2026 NovaStore. All Rights Reserved.</footer>
+    </div>
+
+    <!-- AUTH FULL SCREEN -->
+    <div id="authContainer">
+      <!-- LOGIN -->
+      <section class="auth-wrapper" id="login">
+        <div class="auth-card">
+          <h2>Welcome Back</h2>
+          <form id="loginForm">
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="Enter your email"
+              required
+            />
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Enter your password"
+              required
+            />
+            <button type="submit">Login</button>
+          </form>
+          <p>
+            Don't have an account?
+            <a class="switch-btn" id="toRegister">Create one</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- REGISTER -->
+      <section class="auth-wrapper" id="register">
+        <div class="auth-card">
+          <h2>Create Your Account</h2>
+          <form id="registerForm">
+            <input type="text" id="regName" placeholder="Full Name" required />
+            <input
+              type="email"
+              id="regEmail"
+              placeholder="Enter your email"
+              required
+            />
+            <input
+              type="password"
+              id="regPassword"
+              placeholder="Create a password"
+              required
+            />
+            <button type="submit">Register</button>
+          </form>
+          <p>
+            Already have an account?
+            <a class="switch-btn" id="toLogin">Login</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script/auth.js"></script>
+  </body>
+</html>
